@@ -25,10 +25,6 @@ void ble_send_task(void *arg) {
 	    .slider  = 0x7fff,
 	};
 
-	uint8_t id = (RECEIVER_ID << 3);
-
-	ir_adc_receiver::ir_data_t data;
-
 	while (true) {
 		while (!BleGamePad.connected) vTaskDelay(1000 / portTICK_PERIOD_MS);
 		vTaskDelay(2000 / portTICK_PERIOD_MS);
@@ -40,7 +36,6 @@ void ble_send_task(void *arg) {
 			BleGamePad.send(&pad);
 		}
 	}
-}
 }
 
 void app_main() {
