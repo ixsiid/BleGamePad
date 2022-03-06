@@ -1,0 +1,24 @@
+{
+	"name": "BleGamePad",
+	"version": "0.0.1",
+	"description": "BleGamePad instead IMU",
+	"keywords": "IMU",
+	"repository":
+	{
+	  "type": "git",
+	  "url": "https://github.com/ixsiid/BleGamePad.git"
+	},
+	"authors":
+	[
+	  {
+	    "name": "IXSIID",
+	    "email": "ixsiid@halzion.net",
+	    "url": "https://github.com/ixsiid",
+	    "maintainer": true
+	  }
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/ixsiid/BleGamePad",
+	"frameworks": "espidf",
+	"platforms": "espressif32"
+   }
